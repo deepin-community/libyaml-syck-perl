@@ -1,8 +1,48 @@
-libyaml-syck-perl (1.34-deepin1) unstable; urgency=medium
+libyaml-syck-perl (1.36-2) unstable; urgency=medium
 
-  * Rebuild
+  * Team upload.
+  * fix: address all 4 C-layer audit findings from issue #67 (CVE-2026-4177)
 
- -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:47:08 +0800
+ -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 17 Mar 2026 05:54:02 +0100
+
+libyaml-syck-perl (1.36-1) unstable; urgency=medium
+
+  * Import upstream version 1.36.
+  * Drop Address-memory-corruption-leading-to-str-value-being.patch which
+    was taken from upstream pull request.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.7.3.
+  * Remove «Rules-Requires-Root: no», which is the current default.
+  * Remove «Priority: optional», which is the current default.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 02 Jan 2026 02:12:20 +0100
+
+libyaml-syck-perl (1.34-4) unstable; urgency=medium
+
+  * Team upload.
+  * Address memory corruption leading to 'str' value being set on empty keys
+    (CVE-2025-11683)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Thu, 16 Oct 2025 05:51:30 +0200
+
+libyaml-syck-perl (1.34-3) unstable; urgency=medium
+
+  * Team upload.
+  * gcc15-fix.patch: Fix gcc-15 incompatibilities (Closes: #1097292).
+  * Declare compliance with Debian Policy 4.7.2.
+  * Add debian/salsa-ci.yml pipeline.
+
+ -- Roland Rosenfeld <roland@debian.org>  Fri, 05 Sep 2025 16:58:10 +0200
+
+libyaml-syck-perl (1.34-2) unstable; urgency=medium
+
+  [ Jenkins ]
+  * Apply multi-arch hints. + libyaml-syck-perl: Add Multi-Arch: same.
+
+  [ Debian Janitor ]
+  * Update standards version to 4.5.1, no changes needed.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sun, 16 Oct 2022 04:30:29 +0100
 
 libyaml-syck-perl (1.34-1) unstable; urgency=medium
 
