@@ -1,3 +1,11 @@
+libyaml-syck-perl (1.36-3) unstable; urgency=medium
+
+  * Team upload.
+  * fix: prevent buffer underflow in base60 (sexagesimal) parsing
+    (CVE-2026-5089)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 12 May 2026 20:46:05 +0200
+
 libyaml-syck-perl (1.36-2) unstable; urgency=medium
 
   * Team upload.
